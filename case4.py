@@ -2,7 +2,7 @@ import random
 
 def guess_the_number():
     secret_number = random.randint(1, 100)
-    max_attempts = 7
+    max_attempts = 7 
     print("Я загадал число от 1 до 100. Попробуйте угадать его!")
     print(f"У вас {max_attempts} попыток.")
 
