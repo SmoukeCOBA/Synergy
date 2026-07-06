@@ -35,9 +35,8 @@ TEST(QueueTest, BasicOperations) {
     Queue q;
     q.push(10);
     q.push(20);
-    // Проверяем, что методы вызываются (логика будет добавлена позже)
     EXPECT_NO_THROW(q.push(30));
-    EXPECT_EQ(q.pop(), 0); // Ожидаем 0, так как логика не реализована
+    EXPECT_EQ(q.pop(), 0);
 }
 
 TEST(QueueTest, EmptyStatus) {
@@ -66,9 +65,7 @@ TEST(BinaryTreeTest, SearchTest) {
     tree.push(50);
     tree.push(30);
     tree.push(70);
-    
-    // Проверяем наличие элемента
-    EXPECT_FALSE(tree.search(50)); // false, так как в заглушке return false
+    EXPECT_FALSE(tree.search(50)); 
 }
 
 TEST(BinaryTreeTest, RemoveTest) {
